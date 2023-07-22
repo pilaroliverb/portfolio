@@ -249,7 +249,6 @@ footer {
 
 .scroll-banner {
   width: 50%;
-  overflow: hidden;
   white-space: nowrap;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -335,11 +334,14 @@ footer {
   padding: 0px 0px 0px 160px;
 }
 
-.skills-container ul{
+.skills-container.ul{
   gap: 8px;
   display: flex;
+  flex-direction: row;
   padding-right: 0px;
+  padding-left: 160px;
   align-items: center;
+  overflow: scroll;
   gap: 8px;
 }
 
@@ -350,14 +352,15 @@ footer {
   border-radius: 40px;
   border: 2px solid var(--negro-100, #151515);
   white-space: nowrap;
-  overflow: hidden;
 }
 
 .soft-skills-container {
+  padding-left: 160px;
+  padding-right: 160px;
   display: flex;
   width: 1120px;
-  gap: 64px;
   align-items: flex-start;
+  gap: 64px;
 }
 
 .soft-skills li {
